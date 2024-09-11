@@ -2,7 +2,7 @@
 from http import HTTPStatus
 
 from django.test import Client, TestCase
-from models import Task
+from api.models import Task
 
 
 class TaskiAPITestCase(TestCase):
