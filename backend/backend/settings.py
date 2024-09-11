@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['123.123.123.123', 'localhost', 'kiwinwin.gotdns.ch' ]
+ALLOWED_HOSTS = ['123.123.123.123', 'localhost', 'kiwinwin.gotdns.ch']
 
 
 # Application definition
@@ -60,13 +60,6 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-'''DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '/data/db.sqlite3',
-    }
-}''' 
-
 
 # Этими строчками замените текущую настройку DATABASES
 DATABASES = {
@@ -81,8 +74,6 @@ DATABASES = {
         'PORT': os.getenv('DB_PORT', 5432)
     }
 }
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
